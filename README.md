@@ -37,5 +37,7 @@ Fish recognition classifier
   Plus simple : python -m scripts.label_image --graph=tf_files/retrained_graph.pb --image=tf_files/data/test/maPhoto.jpg
 
 3) PS : 
+    - Codelab : https://codelabs.developers.google.com/codelabs/tensorflow-for-poets/#0
     - Model utilisé : mobilenet rapide,léger,efficace (CPU Tensorflow xD)
     https://research.googleblog.com/2017/06/mobilenets-open-source-models-for.html
+    
