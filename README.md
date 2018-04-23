@@ -4,13 +4,12 @@ Fish recognition classifier
 
 *Utilisation basique*
 
-1) Ajouter un dossier 'data' dans tf_files
-2) Ajouter 3 dossiers 'fish' 'non-fish' et 'test' dans 'data'
+1) Ajouter deux dossiers 'data' & 'test' dans tf_files
+2) Ajouter les dossiers 'classes', 'fish' et 'non-fish' dans 'data'
 3) Remplir les trois dossier avec les datasets correspendant 
 4) Lancer le script 'scripts/retrain.py' pour re-entrainer le model 
 5) Lancer le script 'scripts/label_image.py' pour tester le model sur une image 
 
-*Extras*
 
 1) Paramètres (Indispensable) du scripts/retrain.py \
    --bottleneck_dir=tf_files/bottlenecks \
@@ -35,9 +34,3 @@ Fish recognition classifier
   --input_height={vos spec} \
 
   Plus simple : python -m scripts.label_image --graph=tf_files/retrained_graph.pb --image=tf_files/data/test/maPhoto.jpg
-
-3) PS : 
-    - Codelab : https://codelabs.developers.google.com/codelabs/tensorflow-for-poets/#0
-    - Model utilisé : mobilenet rapide,léger,efficace (CPU Tensorflow xD)
-    https://research.googleblog.com/2017/06/mobilenets-open-source-models-for.html
-    
